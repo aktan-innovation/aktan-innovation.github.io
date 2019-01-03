@@ -120,6 +120,11 @@ header section ul {
 
 /* lists */
 
+ul li {
+  display: flex;
+  align-items: center;
+}
+
 ul.xl {
   list-style: none;
 }
@@ -302,10 +307,4 @@ i.material-icons {
   font-size: 22px;
   background-color: rgb(224, 140, 140);
   box-shadow: 8px 8px 32px 0 rgba(224, 140, 140, 0.5);
-}
-
-.perks div ul li {
-  display: inline-flex;
-  width: 100%;
-  align-items: center;
 }
