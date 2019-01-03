@@ -154,36 +154,50 @@ a {
   color: #fdda2b;
 }
 
-.box {
-  max-width: 256px;
-  position: relative;
+/* boxes */
+
+.box-container {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+}
+
+.box-container .box {
+  min-width: 256px;
   border-radius: 6px;
   border: 2px solid #2727e6;
   padding: 16px;
 }
 
-.box::after {
-  position: absolute;
-  content: '>';
-  top: 50%;
-  right: -25px;
-  transform: translate(0, -50%);
-  font-size: 2rem;
-  color: #2727e6;
+.box-container .box:first-child {
+  justify-self: left;
 }
 
-.box:last-child::after {
-  display: none;
+.box-container .box:not(:first-child):not(:last-child) {
+  justify-self: center;
 }
 
-.box p {
+.box-container .box:last-child {
+  justify-self: right;
+}
+
+.box-container .box p {
   text-align: center;
   margin: 0 0 12px 0;
 }
 
-.box strong {
+.box-container .box strong {
   color: #2727e6;
 }
+
+.box-container i {
+  align-self: center;
+  font-style: normal;
+  font-size: 2rem;
+  color: #2727e6;
+}
+
+/* sections */
 
 .requirements {
   position: relative;
@@ -203,7 +217,7 @@ a {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
-  background-color: #adcbe8;
+  background-color: #afc5e7;
 }
 
 .how-we-work {
