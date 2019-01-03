@@ -4,6 +4,10 @@ body {
   font-size: 18px;
 }
 
+i.material-icons {
+  font-size: 18px; /* default material icons to body size */
+}
+
 /* Layout */
 
 section {
@@ -246,4 +250,10 @@ a {
   font-size: 2.2rem;
   color: #fff;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.perks div ul li {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
 }
