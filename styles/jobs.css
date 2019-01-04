@@ -217,6 +217,18 @@ i.material-icons {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
+.stack li img {
+  margin: 0 0 0 8px;
+  width: 24px;
+  height: 24px;
+  filter: grayscale(100%);
+}
+
+.stack li:hover,
+.stack li img:hover {
+  filter: grayscale(0%);
+}
+
 .apply {
   margin-top: 32px;
   margin-bottom: 64px;
