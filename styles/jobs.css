@@ -95,16 +95,8 @@ ul.no-padding {
 
 /* typography */
 
-h3 {
-
-}
-
 h4 {
   margin: 0 0 16px 0;
-}
-
-a {
-  color: #000;
 }
 
 .grey {
@@ -113,16 +105,21 @@ a {
 
 .stars {
   margin: 0 0 0 8px;
-  color: #fdda2b;
+  color: #FFEB3B;
 }
 
 i.material-icons {
   vertical-align: middle;
   font-size: 18px;
   color: rgba(0, 0, 0, 0.67);
+  user-select: none;
 }
 
-/* boxes */
+i.material-icons.highlight {
+  color: #2727e6;
+}
+
+/* cells */
 
 .cell-container {
   display: grid;
@@ -151,7 +148,13 @@ i.material-icons {
   color: #2727e6;
 }
 
-.cell-container .cell i {
+.cell-container .cell .cell-inner i.material-icons {
+  margin: 0 4px 0 0;
+  vertical-align: bottom;
+  font-size: 22px;
+}
+
+.cell-container .cell .cell-separator {
   display: none;
   flex: 1;
   align-self: center;
@@ -169,7 +172,7 @@ i.material-icons {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .cell-container .cell i {
+  .cell-container .cell .cell-separator {
     display: block;
   }
 
