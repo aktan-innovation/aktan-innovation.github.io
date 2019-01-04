@@ -244,41 +244,22 @@ i.material-icons {
 
 .requirements {
   position: relative;
-}
-
-.requirements::after {
-  display: block;
-  content: '';
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  color: #ffff;
-  background: url(/images/2.png);
+  background: url(/images/2.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 90% 50%;
-  background-color: #afc5e7;
+  background-color: #a2bee1;
+}
+
+@media (max-width: 576px) {
+  .requirements {
+    background-image: none;
+  }
 }
 
 .how-we-work {
-  position: relative;
   padding: 88px 0;
-}
-
-.how-we-work::after {
-  display: block;
-  content: '';
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  color: #ffff;
-  background: url(/images/1.png);
+  background: url(/images/1.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
