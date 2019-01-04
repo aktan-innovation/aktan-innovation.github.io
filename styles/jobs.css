@@ -1,6 +1,6 @@
 /* Header */
 
-header {
+header, footer {
   position: relative;
   padding: 64px 0;
   color: #ffffff;
@@ -232,4 +232,34 @@ i.material-icons {
   font-size: 22px;
   background-color: rgb(224, 140, 140);
   box-shadow: 8px 8px 32px 0 rgba(224, 140, 140, 0.5);
+}
+
+/* Footer */
+
+footer:before, footer:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 8px;
+}
+
+footer:before {
+  top: 4px;
+  background: radial-gradient(closest-side, #fff, #fff 50%, transparent 50%);
+  background-size: 8px 8px;
+  background-position: 0 -4px;
+  background-repeat: repeat-x;
+}
+
+footer:after {
+  top: -4px;
+  background: radial-gradient(closest-side, transparent, transparent 50%, #fff 50%);
+  background-position: -4px 4px;
+  background-size: 8px 8px;
+  background-repeat: repeat-x;
+}
+
+footer a {
+  color: #fdda2b;
 }
