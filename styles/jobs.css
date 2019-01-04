@@ -177,8 +177,9 @@ a {
 }
 
 i.material-icons {
-  margin: 0 0 0 8px;
+  margin: 0 0 0 4px;
   font-size: 18px;
+  color: rgba(0, 0, 0, 0.67);
 }
 
 /* boxes */
