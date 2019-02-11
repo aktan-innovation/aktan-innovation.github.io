@@ -63,6 +63,10 @@ header section ul {
   margin: 0;
 }
 
+header section ul li {
+  margin-bottom: 0;
+}
+
 /* lists */
 
 ul.xl {
@@ -265,6 +269,10 @@ footer:after {
   background-position: -4px 4px;
   background-size: 8px 8px;
   background-repeat: repeat-x;
+}
+
+footer h3 {
+  margin-top: 0;
 }
 
 footer a {
